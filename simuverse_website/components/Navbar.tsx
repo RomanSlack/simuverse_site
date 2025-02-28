@@ -40,7 +40,7 @@ const Navbar = () => {
             <Link href="#about" className="text-[#4a5568] hover:text-mars-red transition-colors">
               About
             </Link>
-            <Link href="https://github.com/roman-slack/simuverse" className="btn-secondary py-2">
+            <Link href="https://github.com/RomanSlack/SimuVerse-Test-Environment-V1" className="btn-secondary py-2">
               GitHub
             </Link>
           </div>

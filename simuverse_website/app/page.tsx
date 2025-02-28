@@ -3,7 +3,7 @@ import Hero from '../components/Hero';
 import FeatureCard from '../components/FeatureCard';
 import ImpactCard from '../components/ImpactCard';
 import Footer from '../components/Footer';
-
+import Image from 'next/image';
 export default function Home() {
   return (
     <>
@@ -87,53 +87,64 @@ export default function Home() {
         </div>
       </section>
       
-      {/* Mars Environment Section */}
-      <section className="py-20 bg-gradient-to-br from-mars-surface/5 to-mars-orange/10 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
-            <div className="mb-12 lg:mb-0">
-              <h2 className="section-title">Simulated Mars Environment</h2>
-              <p className="text-[#718096] mb-6">
-                SimuVerse creates a detailed Mars habitat where AI agents live, work, and interact. This controlled environment allows for realistic testing of multi-agent behaviors and emergent social dynamics.
-              </p>
-              <ul className="space-y-4">
-                {[
-                  "Dynamic terrain with realistic physics constraints",
-                  "Modular habitat systems that agents can interact with",
-                  "Resource management challenges that drive agent behaviors",
-                  "Day/night cycles that influence agent routines",
-                  "Weather events that create environmental challenges"
-                ].map((item, index) => (
-                  <li key={index} className="flex items-start">
-                    <div className="flex-shrink-0 h-6 w-6 rounded-full bg-mars-orange/20 flex items-center justify-center mt-0.5">
-                      <svg className="h-4 w-4 text-mars-red" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <span className="ml-2 text-[#718096]">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            
-            <div className="relative">
-              <div className="aspect-w-1 aspect-h-1 w-full h-full max-h-[500px] relative rounded-xl overflow-hidden bg-mars-red/10 flex items-center justify-center">
-                <div className="absolute inset-0 bg-gradient-to-br from-space-dark/5 to-mars-red/20 rounded-xl"></div>
-                <div className="h-64 w-64 rounded-full bg-gradient-to-br from-mars-orange/30 to-mars-red/40 absolute animate-pulse-slow"></div>
-                <div className="h-40 w-40 rounded-full bg-gradient-to-tl from-mars-dust/30 to-mars-surface/40 absolute animate-float"></div>
-                <div className="z-10 text-space-blue text-center px-8">
-                  <div className="font-mono text-sm opacity-80 mb-2">// Mars Simulation Environment</div>
-                  <div className="font-bold">Virtual habitat for advanced AI agent research</div>
-                </div>
+
+
+{/* Mars Environment Section */}
+
+<section className="py-20 bg-gradient-to-br from-mars-surface/5 to-mars-orange/10 overflow-hidden">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+      <div className="mb-12 lg:mb-0">
+        <h2 className="section-title">Simulated Mars Environment</h2>
+        <p className="text-[#718096] mb-6">
+          SimuVerse creates a detailed Mars habitat where AI agents live, work, and interact. This controlled environment allows for realistic testing of multi-agent behaviors and emergent social dynamics.
+        </p>
+        <ul className="space-y-4">
+          {[
+            "Dynamic terrain with realistic physics constraints",
+            "Modular habitat systems that agents can interact with",
+            "Resource management challenges that drive agent behaviors",
+            "Day/night cycles that influence agent routines",
+            "Weather events that create environmental challenges"
+          ].map((item, index) => (
+            <li key={index} className="flex items-start">
+              <div className="flex-shrink-0 h-6 w-6 rounded-full overflow-hidden bg-mars-orange/20 flex items-center justify-center mt-0.5">
+                {/* Optionally, keep your bullet icon or replace it with another Image */}
+                <svg className="h-4 w-4 text-mars-red" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
               </div>
-              
-              {/* Decorative elements */}
-              <div className="absolute -bottom-6 -right-6 h-24 w-24 rounded-full bg-gradient-to-tl from-mars-orange/20 to-transparent"></div>
-              <div className="absolute -top-6 -left-6 h-16 w-16 rounded-full bg-gradient-to-br from-mars-dust/20 to-transparent"></div>
-            </div>
+              <span className="ml-2 text-[#718096]">{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="relative">
+        <div className="aspect-w-1 aspect-h-1 w-full h-full max-h-[500px] relative rounded-xl overflow-hidden bg-mars-red/10 flex items-center justify-center">
+          <div className="absolute inset-0 bg-gradient-to-br from-space-dark/5 to-mars-red/20 rounded-xl"></div>
+          <div className="h-64 w-64 rounded-full bg-gradient-to-br from-mars-orange/30 to-mars-red/40 absolute animate-pulse-slow"></div>
+          <div className="h-40 w-40 rounded-full bg-gradient-to-tl from-mars-dust/30 to-mars-surface/40 absolute animate-float"></div>
+          {/* Replace text with a responsive Next.js Image */}
+          <div className="z-10 flex items-center justify-center w-full h-full">
+            <Image
+              src="/image_fx_.jpg"  // Update with your image path
+              alt="SimuVerse Simulation Environment"
+              width={500}
+              height={500}
+              className="object-cover rounded-lg"
+            />
           </div>
         </div>
-      </section>
+
+        {/* Decorative elements */}
+        <div className="absolute -bottom-6 -right-6 h-24 w-24 rounded-full bg-gradient-to-tl from-mars-orange/20 to-transparent"></div>
+        <div className="absolute -top-6 -left-6 h-16 w-16 rounded-full bg-gradient-to-br from-mars-dust/20 to-transparent"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
       
       {/* Impact Section */}
       <section id="impact" className="py-20 bg-white">
@@ -198,7 +209,7 @@ export default function Home() {
             <div className="mb-12 lg:mb-0">
               <h2 className="section-title">About the Project</h2>
               <p className="text-[#718096] mb-6">
-                SimuVerse was created by Roman Slack at Rochester Institute of Technology as a groundbreaking platform for AI research and multi-agent simulation.
+                SimuVerse was created by Roman Slack at The Rochester Institute of Technology as a groundbreaking platform for AI research and multi-agent simulation.
               </p>
               <p className="text-[#718096] mb-6">
                 The project aims to bridge the gap between theoretical AI research and practical applications, providing a sandbox environment where autonomous agents can develop complex behaviors through interactions.
@@ -256,13 +267,13 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a 
-              href="https://github.com/roman-slack/simuverse" 
+              href="https://github.com/RomanSlack/SimuVerse-Test-Environment-V1"
               className="px-8 py-3 bg-white text-space-blue font-medium rounded-lg shadow-md hover:bg-gray-100 transition-colors duration-200"
             >
               GitHub Repository
             </a>
             <a 
-              href="#" 
+              href="https://discord.gg/rJSjCV2A"
               className="px-8 py-3 bg-transparent border border-white text-white font-medium rounded-lg hover:bg-white/10 transition-colors duration-200"
             >
               Join Discord

@@ -17,7 +17,7 @@ const Footer = () => {
               A revolutionary multi-agent simulation environment creating the future of AI research and interaction.
             </p>
             <p className="mt-4 text-sm text-gray-300">
-              Created by Roman Slack at Rochester Institute of Technology
+              Created by Roman Slack at The Rochester Institute of Technology
             </p>
           </div>
           
@@ -26,7 +26,7 @@ const Footer = () => {
             <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Resources</h3>
             <ul className="mt-4 space-y-2">
               <li>
-                <Link href="https://github.com/roman-slack/simuverse" className="text-gray-300 hover:text-mars-orange transition-colors">
+                <Link href="https://github.com/RomanSlack/SimuVerse-Test-Environment-V1" className="text-gray-300 hover:text-mars-orange transition-colors">
                   GitHub Repository
                 </Link>
               </li>
@@ -42,7 +42,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link href="https://www.rit.edu" className="text-gray-300 hover:text-mars-orange transition-colors">
-                  Rochester Institute of Technology
+                  The Rochester Institute of Technology
                 </Link>
               </li>
             </ul>

@@ -135,7 +135,7 @@ const Hero = () => {
           <div className="lg:col-span-7">
             <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
               <span className="block text-space-blue">SimuVerse</span>
-              <span className="block gradient-text mt-1">Making The Matrix Real</span>
+              <span className="block gradient-text mt-1">Intelligent Agents, Evolving Together</span>
             </h1>
             <p className="mt-6 text-lg text-[#718096] max-w-xl">
               A revolutionary multi-agent simulation environment where AI agents powered by LLMs live and interact on Mars, 
@@ -145,12 +145,12 @@ const Hero = () => {
               <Link href="#features" className="btn-primary">
                 Explore Features
               </Link>
-              <Link href="https://github.com/roman-slack/simuverse" className="btn-secondary">
+              <Link href="https://github.com/RomanSlack/SimuVerse-Test-Environment-V1" className="btn-secondary">
                 View on GitHub
               </Link>
             </div>
             <div className="mt-10 text-sm text-[#a0aec0]">
-              Created by Roman Slack at Rochester Institute of Technology
+              Created by Roman Slack at The Rochester Institute of Technology
             </div>
           </div>
         </div>
