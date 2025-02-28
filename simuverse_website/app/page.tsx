@@ -128,7 +128,7 @@ export default function Home() {
           {/* Replace text with a responsive Next.js Image */}
           <div className="z-10 flex items-center justify-center w-full h-full">
             <Image
-              src="/image_fx_.jpg"  // Update with your image path
+              src="/mars1.jpg"  // Update with your image path
               alt="SimuVerse Simulation Environment"
               width={500}
               height={500}
