@@ -269,7 +269,7 @@ export default function Home() {
                 SimuVerse was created by Roman Slack at The Rochester Institute of Technology as a groundbreaking platform for AI research and multi-agent simulation.
               </p>
               <p className="text-[#718096] mb-6">
-                The project aims to bridge the gap between theoretical AI research and practical applications, providing a sandbox environment where autonomous agents can develop complex behaviors through interactions.
+                This open source project aims to bridge the gap between theoretical AI research and practical applications, providing a sandbox environment where autonomous agents can develop complex behaviors through interactions.
               </p>
               <p className="text-[#718096]">
                 Inspired by the concept of digital worlds like "The Matrix," SimuVerse is pushing the boundaries of what's possible in creating realistic, adaptive AI populations that can teach us about collective intelligence and emergent behaviors.
@@ -320,7 +320,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Join the SimuVerse Community</h2>
           <p className="text-lg text-gray-100 max-w-2xl mx-auto mb-8">
-            Be part of the revolution in multi-agent AI simulation. Contribute, experiment, and help shape the future of artificial intelligence.
+            Be part of the revolution in multi-agent AI simulation. As a fully open source project, SimuVerse invites you to contribute, experiment, and help shape the future of artificial intelligence.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a 
