@@ -8,27 +8,27 @@ import Image from 'next/image';
 const GithubPage = () => {
   const repositories = [
     {
-      title: "SimuVerse Test Environment V1",
+      title: "SimuVerse Framework MK3",
       description: "The main SimuVerse testing environment with multi-agent AI simulation capabilities.",
-      url: "https://github.com/RomanSlack/SimuVerse-Test-Environment-V1",
+      url: "https://github.com/RomanSlack/SimuVerse_Framework_MK3",
       icon: "/file.svg",
     },
     {
-      title: "SimuVerse Data Collection",
+      title: "SimuVerse Unity Scripts & Environment",
       description: "Data collection and analysis tools for SimuVerse agent interactions and behaviors.",
-      url: "https://github.com/RomanSlack/SimuVerse-Test-Environment-V1", // Update with actual URL when available
+      url: "https://github.com/RomanSlack/SimuExo1", // Update with actual URL when available
       icon: "/globe.svg",
     },
     {
-      title: "SimuVerse Website",
+      title: "SimuVerse Testing Sandbox",
       description: "The SimuVerse project website codebase built with Next.js and Tailwind CSS.",
       url: "https://github.com/RomanSlack/SimuVerse-Test-Environment-V1", // Update with actual URL when available
       icon: "/window.svg",
     },
     {
-      title: "SimuVerse Research Papers",
+      title: "SimuVerse Memory & Subconscious Project",
       description: "Academic research papers and documentation related to the SimuVerse project and multi-agent AI environments.",
-      url: "https://github.com/RomanSlack/SimuVerse-Test-Environment-V1", // Update with actual URL when available
+      url: "https://github.com/Forkei/Simu-Verse_Memory", // Update with actual URL when available
       icon: "/next.svg",
     }
   ];
