@@ -24,6 +24,12 @@ const GithubPage = () => {
       description: "The SimuVerse project website codebase built with Next.js and Tailwind CSS.",
       url: "https://github.com/RomanSlack/SimuVerse-Test-Environment-V1", // Update with actual URL when available
       icon: "/window.svg",
+    },
+    {
+      title: "SimuVerse Research Papers",
+      description: "Academic research papers and documentation related to the SimuVerse project and multi-agent AI environments.",
+      url: "https://github.com/RomanSlack/SimuVerse-Test-Environment-V1", // Update with actual URL when available
+      icon: "/next.svg",
     }
   ];
 
@@ -43,7 +49,7 @@ const GithubPage = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8">
             {repositories.map((repo, index) => (
               <Link href={repo.url} key={index} target="_blank" rel="noopener noreferrer">
                 <div className="card h-full flex flex-col hover:bg-gradient-to-br hover:from-white hover:to-[#fcf8f5] border border-transparent hover:border-mars-orange/20 transition-all duration-300">
