@@ -26,8 +26,8 @@ const Footer = () => {
             <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Resources</h3>
             <ul className="mt-4 space-y-2">
               <li>
-                <Link href="https://github.com/RomanSlack/SimuVerse-Test-Environment-V1" className="text-gray-300 hover:text-mars-orange transition-colors">
-                  GitHub Repository
+                <Link href="/github" className="text-gray-300 hover:text-mars-orange transition-colors">
+                  GitHub Repositories
                 </Link>
               </li>
               <li>

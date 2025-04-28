@@ -1,15 +1,71 @@
+'use client';
+
+import { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import FeatureCard from '../components/FeatureCard';
 import ImpactCard from '../components/ImpactCard';
 import Footer from '../components/Footer';
 import Image from 'next/image';
+
 export default function Home() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const totalSlides = 5; // The number of images in the carousel
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % totalSlides);
+    }, 5000); // Change slide every 5 seconds
+    
+    return () => clearInterval(interval);
+  }, []);
+  
   return (
     <>
       <Navbar />
       
       <Hero />
+      
+      {/* Photo Carousel Section */}
+      <section className="py-12 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="section-title inline-block">
+              SimuVerse in Action
+            </h2>
+            <p className="text-[#718096] max-w-2xl mx-auto mt-4">
+              Visual journey through our multi-agent AI simulation environment
+            </p>
+          </div>
+          
+          <div className="relative overflow-hidden rounded-xl">
+            <div className="carousel-container w-full h-[60vh] max-h-[600px] relative overflow-hidden">
+              {[
+                '/simuversegroup.jpg',
+                '/imagine2.jpg',
+                '/roman1.jpg',
+                '/imagine1.jpg',
+                '/joshua1.jpg'
+              ].map((src, index) => (
+                <div 
+                  key={index} 
+                  className={`carousel-slide absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                    currentSlide === index ? 'opacity-100 z-10' : 'opacity-0 z-0'
+                  }`}
+                >
+                  <Image
+                    src={src}
+                    alt={`SimuVerse Image ${index + 1}`}
+                    fill
+                    className={`rounded-xl ${src === '/joshua1.jpg' ? 'object-contain' : 'object-cover'}`}
+                    priority={index === 0}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
       
       {/* Features Section */}
       <section id="features" className="py-20 bg-white">
@@ -127,13 +183,14 @@ export default function Home() {
           <div className="h-40 w-40 rounded-full bg-gradient-to-tl from-mars-dust/30 to-mars-surface/40 absolute animate-float"></div>
           {/* Replace text with a responsive Next.js Image */}
           <div className="z-10 flex items-center justify-center w-full h-full">
-            <Image
-              src="/mars1.jpg"  // Update with your image path
-              alt="SimuVerse Simulation Environment"
-              width={500}
-              height={500}
-              className="object-cover rounded-lg"
-            />
+            <iframe 
+              src="https://www.youtube.com/embed/i8AxHZQESlM?start=57&autoplay=1&mute=1"
+              title="SimuVerse Simulated Mars Environment"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full rounded-lg"
+              style={{ aspectRatio: '16/9', maxHeight: '500px' }}
+            ></iframe>
           </div>
         </div>
 
@@ -267,10 +324,10 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a 
-              href="https://github.com/RomanSlack/SimuVerse-Test-Environment-V1"
+              href="/github"
               className="px-8 py-3 bg-white text-space-blue font-medium rounded-lg shadow-md hover:bg-gray-100 transition-colors duration-200"
             >
-              GitHub Repository
+              GitHub Repositories
             </a>
             <a 
               href="https://discord.gg/rJSjCV2A"

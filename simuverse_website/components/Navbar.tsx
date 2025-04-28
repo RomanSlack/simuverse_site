@@ -40,7 +40,7 @@ const Navbar = () => {
             <Link href="#about" className="text-[#4a5568] hover:text-mars-red transition-colors">
               About
             </Link>
-            <Link href="https://github.com/RomanSlack/SimuVerse-Test-Environment-V1" className="btn-secondary py-2">
+            <Link href="/github" className="btn-secondary py-2">
               GitHub
             </Link>
           </div>
@@ -92,7 +92,7 @@ const Navbar = () => {
               About
             </Link>
             <Link 
-              href="https://github.com/roman-slack/simuverse" 
+              href="/github" 
               onClick={() => setIsOpen(false)}
               className="block px-3 py-2 rounded-md text-base font-medium text-space-blue hover:bg-space-blue/5"
             >

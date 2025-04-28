@@ -145,7 +145,7 @@ const Hero = () => {
               <Link href="#features" className="btn-primary">
                 Explore Features
               </Link>
-              <Link href="https://github.com/RomanSlack/SimuVerse-Test-Environment-V1" className="btn-secondary">
+              <Link href="/github" className="btn-secondary">
                 View on GitHub
               </Link>
             </div>
